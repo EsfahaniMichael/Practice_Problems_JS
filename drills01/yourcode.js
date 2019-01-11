@@ -7,8 +7,19 @@ function sumArray(allNums){
     return total;
 }
 
-function fitWithinVal(){
-
+function fitWithinVal(array,num){
+  var total = null;
+  var numbers = [];
+  var i = 0;  
+      while(total < num){        
+        total += array[i];
+        if (total < num){
+          numbers.push(array[i])
+        }
+        i++;
+      }      
+  return numbers;
+      
 }
 
 function getAllNamesShorterThan(){
